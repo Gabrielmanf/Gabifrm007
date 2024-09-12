@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<form>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Botcam Full stack - Formulario de Registro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">  
    </head>
 <body>
   <h1>Formulario de Registro</h1>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">  
-  <label for="nombre">Nombre completo:</label>
-  <input type="text" id="nombre" name="nombre" required>
+  <form>
+  
+    <div class="form-group">
+      <label for="nombre">Nombre completo:</label>
+<input type="text" class="form-control" id="nombre" name="nombre"required>
+      </div>
 
+      <div class="form-group">
 <label for="apellido">Apellido: </label>
-  <input type="text" id="apellido" name="apellido" required>
+<input type="text" class="form-control" id="apellido" name="apellido" required>
+      </div>
 
-  <label for="email">Correo electrónico:</label>
-  <input type="email" id="email" name="email" required>
+      <div class="form-group">
+  
+<label for="email">Correo electrónico:</label>
+<input type="email" class="form-control" id="email" name="email" required>
+      </div>
 
-  <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+      <div class="form-group">
 
-  <label for="pais">País:</label>
-  <select id="pais" name="pais" required>
-    <option value="ES">España</option>
-    <option value="MX">México</option>
+<label for="fecha_nacimiento">Fecha de nacimiento:</label>
+<input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento">
+      </div>
+      
+<label for="pais">País:</label>
+<select id="pais" name="pais" required>
+  <option value="ES">España</option>
+  <option value="MX">México</option>
 <option value="US">Estados Unidos</option>
 <option value="BR">Brasil</option>
-    <option value="AR">Argentina</option>
-  </select>
+  <option value="AR">Argentina</option>
+</select>
+<button type="submit" class="btn btn-primary">Enviar</button>"
 
   </form>
-
-  <button type="submit">Enviar</button>
 </body>
 </html>
-
